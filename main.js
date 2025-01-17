@@ -58,8 +58,6 @@ function createBullets (num) {
         }
 
         bulletContainer.appendChild(theBullet)
-
-
         
     }
 }
@@ -80,9 +78,9 @@ function addQuestionData (obj , count) {
             radioInput.type = "radio"
             radioInput.id = `answer_${i}`
             radioInput.dataset.answer = obj[`answer_${i}`]
-            if(i === 1) [
+            if(i === 1) {
                 radioInput.checked = true
-            ]
+            }
     
             let theLabel = document.createElement("label")
             theLabel.htmlFor = `answer_${i}`
