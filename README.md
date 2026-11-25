@@ -1,83 +1,42 @@
-```markdown
-# Quiz App  
+# Quiz App
 
-This is a dynamic Quiz Application built with HTML, CSS, and JavaScript. It features a timer for each question and stores the quiz questions and answers in a JSON file for easy management.  
+## 1. Description
 
-## Features  
+A dynamic quiz application built with HTML, CSS and JavaScript. Questions are stored in a JSON file for easy management, and each question has a 30-second timer.
 
-- 📚 **Dynamic Questions**: Questions and answers are fetched from a JSON file.  
-- ⏱️ **Timer**: Each question has a 30-second timer to answer.  
-- 📊 **Results Screen**: Shows the total score at the end of the quiz.  
+## 2. Technologies and Versions
 
-## How It Works  
+- HTML5, CSS3, vanilla JavaScript (no build step)
 
-1. Questions and answers are stored in a `questions.json` file.  
-2. The app fetches questions dynamically and displays them one by one.  
-3. A 30-second timer starts for each question. If the timer runs out, it moves to the next question automatically.  
-4. After completing all questions, the app displays the total score along with correct/incorrect answers.  
+## 3. Requirements and Dependencies
 
-## Prerequisites  
+- A modern web browser with JavaScript enabled
+- No packages to install
 
-- A modern web browser with JavaScript enabled.  
-- JSON file (`questions.json`) with the following structure:  
+## 4. Installation and Run Steps
 
-```json
-[
-  {
-    "title": "Why We Use <br> Element",
-      "answer_1": "To Make Text Bold",
-      "answer_2": "To Make Text Italic",
-      "answer_3": "To Add Breakline",
-      "answer_4": "To Create Horizontal Line",
-      "right_answer": "To Add Breakline"
-  },
-  {
-    "title": "Is <img> Element Has Attribute href",
-      "answer_1": "Yes",
-      "answer_2": "No Its For Anchor Tag <a>",
-      "answer_3": "All Elements Has This Attribute",
-      "answer_4": "Answer 1 And 3 Is Right",
-      "right_answer": "No Its For Anchor Tag <a>"
-  }
-]
-```  
+```bash
+git clone https://github.com/MostafaNegm222/Quiz-App.git
+cd Quiz-App
+```
 
-## Installation  
+Open `index.html` in a browser. (Serving the folder with a static server also works and is more reliable for the JSON fetch.)
 
-1. Clone this repository:  
-   ```bash  
-   git clone (https://github.com/MostafaNegm222/Quiz-App)  
-   ```  
-2. Open the project folder:  
-   ```bash  
-   cd <project-folder>  
-   ```  
-3. Open the `index.html` file in your browser.  
+## 5. Environment Variables
 
-## Usage  
+None required.
 
-1. The quiz begins as soon as you start the app.  
-2. Choose the correct answer for each question within the 30-second timer.  
-3. After answering all questions, view your results.  
+## 6. Usage and Main Features
 
-## Customization  
+- Questions and answers are fetched dynamically from `htmlQuestion.json` and displayed one by one.
+- A 30-second timer runs per question; when it runs out, the app moves to the next question automatically.
+- After the last question, a results screen shows the total score with correct/incorrect answers.
+- To edit the quiz, edit `htmlQuestion.json` (fields: `title`, `answer_1`..`answer_4`, `right_answer`).
 
-- **Add Questions**: Add more questions by updating the `questions.json` file.  
-- **Modify Timer**: Change the timer duration in the JavaScript file.  
+## 7. Screenshots / Demo
 
-## Demo  
+- Live demo: https://mostafanegm222.github.io/Quiz-App/
 
-Check out the live demo here: [**Live App Link**](https://mostafanegm222.github.io/Quiz-App/)
+## 8. Running Tests
 
-
-## License  
-
-This project is open source and available under the [MIT License](LICENSE).  
-
-## Contributing  
-
-Contributions are welcome! Feel free to submit issues or pull requests.  
-
-## Contact  
-
-If you have any questions, feel free to reach out!  
+No automated tests in this repo.
